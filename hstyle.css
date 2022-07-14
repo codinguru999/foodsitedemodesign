@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    position:fixed;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 6px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.glow {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav li{
+    list-style: none;
+    margin: 9px 8px;  
+}
+.nav ul .search{
+    color: rgb(34, 2, 2); 
+}
+.nav input{
+    border: 1px solid black;
+    border-radius: 14px;
+    padding: 1ex;
+    width: 15rem;
+    background-color: lightyellow;
+}
+.nav .search i{
+    font-size: 1.5rem;
+}
+.nav .search button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.nav .search:hover i{
+    color: white;
+}
+.fa{
+    margin: 2px;
+    visibility: hidden;
+}
+.links:hover .fa{
+    visibility: visible;
+    animation: logo 4s infinite linear;
+}
+.links{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 34px;
+    padding: 8px 10px;
+}
+.links:hover{
+    animation: linkhover 1s forwards ease-out;
+}
+@keyframes linkhover {
+    from {
+        text-shadow: 0 0 30px transparent;
+    }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }  
+}
+/*  
+.home {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    position: relative;
+  }
+  
+  .home .content h1 {
+    font-size: 5rem;
+    font-family: 'lemonada',sans-serif;
+    font-weight: bolder;
+    text-shadow: .1rem .1rem .3rem #333;
+    color: #FFF200;
+  }
+  
+  .home .content h2 {
+    font-size: 3.5rem;
+    font-family: 'lemonada',sans-serif;
+    font-weight: bolder;
+    text-shadow: .1rem .1rem .3rem #333;
+    color: #fff;
+    margin: 1rem 0;
+  }
+  
+  .home .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+  }
+
+  .home .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .home .video-container .vid {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: none;
+  } */
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: .7;
+    z-index: -1;
+  }
+  .cuisins{
+      position: relative;
+      top: 700px;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      height: fit-content;
+      
+  }
+ .cuisins h1{
+    margin: auto;
+    padding: 30px;
+}
+.culist{
+    display: inline-flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.culist img{
+    height: 149px;
+    width: 172px;
+    border-radius: 85px;
+}
+.imgcu{
+    padding: 18px;
+    text-align: center;
+    align-items: center;
+}
+.imgcu img:hover{
+    opacity: .6;
+    z-index: -1;
+}
+.imgcu .la-im{
+
+    font-weight: bold;
+    
+    margin: auto;
+
+
+}
+
+.cat-dr{
+    position: relative;
+    top: 712px;
+    height: fit-content;
+}
+
+.ab-cat{
+    /* width: fit-content; */
+    height: fit-content;
+}
+.ab-cat img{
+    height: 90px;
+    width: 102px;
+    border-radius: 76px;
+    display: inline;
+}
+.ab-cat h3{
+    position: relative;
+    top: -60px;
+    left: 120px;
+}
+.btnall{
+    width: 80px;
+    height: 35px;
+    background-color: rgb(184, 120, 78);
+    color: white;
+    float: right;
+}
+table, th,td {
+    margin: auto;
+    /* border: 2px solid rgb(4, 9, 66); */
+    padding: 5px;
+    text-align: center;
+}
+th img{
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+}
+tr td button{
+    width: 200px;
+    height: 35px;
+    background-color: rgb(184, 120, 78);
+    color: white;
+    /* align-items: center;
+    justify-self: center;
+    justify-content: center; */
+}
+tr td{
+    align-items: center;
+    text-align: center;
+}
